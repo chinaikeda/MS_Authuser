@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: ikeda-authuser-service
+    name: ikeda-authuser
   datasource:
     url: jdbc:postgresql://localhost:5432/ikeda-authuser
     username: postgres
