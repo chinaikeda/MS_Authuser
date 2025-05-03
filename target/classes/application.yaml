@@ -1,0 +1,22 @@
+server:
+  port: 8087
+  servlet:
+    context-path: '/ikeda-authuser/'
+
+spring:
+  application:
+    name: ikeda-authuser-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ikeda-authuser
+    username: postgres
+    password: zaq1@wsx
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show_sql: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non-contextual-creation: true
