@@ -2,6 +2,9 @@ package com.ikeda.authuser.services;
 
 import com.ikeda.authuser.dtos.UserRecordDto;
 import com.ikeda.authuser.models.UserModel;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,4 +29,6 @@ public interface UserService {
     UserModel updatePassword(UserRecordDto userRecordDto, UserModel userModel);
 
     UserModel updateImagem(UserRecordDto userRecordDto, UserModel userModel);
+
+    Page<UserModel> findAll(Specification<UserModel> spec, Pageable pageable);
 }

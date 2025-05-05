@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e5a35e3-be52-493d-85c1-7d134455da64" name="Changes" comment="Commit&#10;- ExceptionsGlobaisViaControllerAdvice&#10;- Verificacoes&#10;- JsonView&#10;- Record">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/dtos/UserRecordDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/exceptions/ErrorRecordResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/exceptions/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/exceptions/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/exceptions/NotFoundException.java" afterDir="false" />
+    <list default="true" id="8e5a35e3-be52-493d-85c1-7d134455da64" name="Changes" comment="Commit&#10;- Validation&#10;- Paginação&#10;- CORS&#10;- Filtros avançados com Specification&#10;- Hipermídias com Spring Hateoas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/configs/ResolverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/specifications/SpecificationTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/validations/PasswordConstraint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/validations/PasswordConstraintImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/controller/AuthenticationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/dtos/UserRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/dtos/UserRecordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/exceptions/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/exceptions/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ikeda/authuser/services/impl/UserServiceImpl.java" afterDir="false" />
@@ -29,10 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
-        <option value="Record" />
       </list>
     </option>
   </component>
@@ -69,11 +69,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "ExceptionsGlobaisViaControllerAdvice__Verificacoes__JsonView",
+    "git-widget-placeholder": "Validation__Paginacao__CORS",
     "last_opened_file_path": "C:/Users/Ikeda/Documents/GitHub/IdeaProjects/Modelo/authuser",
     "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ikeda.authuser.validations" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MS_Authuser" />
@@ -113,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit&#10;- ExceptionsGlobaisViaControllerAdvice&#10;- Verificacoes&#10;- JsonView&#10;- Record" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit&#10;- ExceptionsGlobaisViaControllerAdvice&#10;- Verificacoes&#10;- JsonView&#10;- Record" />
+    <MESSAGE value="Commit&#10;- Validation&#10;- Paginação&#10;- CORS&#10;- Filtros avançados com Specification&#10;- Hipermídias com Spring Hateoas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit&#10;- Validation&#10;- Paginação&#10;- CORS&#10;- Filtros avançados com Specification&#10;- Hipermídias com Spring Hateoas" />
   </component>
 </project>

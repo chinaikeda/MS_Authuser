@@ -8,6 +8,9 @@ import com.ikeda.authuser.models.UserModel;
 import com.ikeda.authuser.repositories.UserRepository;
 import com.ikeda.authuser.services.UserService;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -88,5 +91,10 @@ public class UserServiceImpl implements UserService {
         userModel.setLastUpdateDate(LocalDateTime.now(ZoneId.of("UTC")));
 
         return userRepository.save(userModel);
+    }
+
+    @Override
+    public Page<UserModel> findAll(Specification<UserModel> spec, Pageable pageable) {
+        return userRepository.findAll(spec, pageable);
     }
 }

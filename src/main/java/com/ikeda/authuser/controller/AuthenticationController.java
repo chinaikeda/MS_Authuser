@@ -5,6 +5,7 @@ import com.ikeda.authuser.dtos.UserRecordDto;
 import com.ikeda.authuser.services.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +22,8 @@ public class AuthenticationController {
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<Object> registerUser(@RequestBody @JsonView(UserRecordDto.UserView.RegistrationPost.class) UserRecordDto userRecordDto){
+    public ResponseEntity<Object> registerUser(@RequestBody @Validated(UserRecordDto.UserView.RegistrationPost.class)
+                                               @JsonView(UserRecordDto.UserView.RegistrationPost.class) UserRecordDto userRecordDto){
         if(userService.existsByUsername(userRecordDto.username())){
             return ResponseEntity.status(HttpStatus.CONFLICT).body("Error: Username is Already Taken!");
         }
